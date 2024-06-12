@@ -14,6 +14,9 @@ app.get('/',(req,res)=>{
 //res.status(200).json({message:'hii all wellcome'})
 res.status(200).send(`<div style="background-color:Aqua;color:black"><h1>welcome to my first App</h1></div>`)
 })
+app.get("/data",(req,res)=>{
+    res.status(200).send(`<div style="background-color:Aqua;color:black"><h1>welcome to my Home</h1></div>`)  
+})
 
 //running port
 app.listen(PORT,()=>{
